@@ -1,0 +1,6 @@
+{
+  "name": "zimage-generator",
+  "description": "Generate images using ModelScope Z-Image API",
+  "entry": "index.js",
+  "version": "1.0.0"
+}

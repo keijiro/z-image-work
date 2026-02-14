@@ -1,0 +1,10 @@
+{
+  "name": "zimage-skill",
+  "version": "1.0.0",
+  "description": "Codex Agent Skill for Z-Image generation",
+  "main": "index.js",
+  "type": "module",
+  "dependencies": {
+    "axios": "^1.6.0"
+  }
+}
