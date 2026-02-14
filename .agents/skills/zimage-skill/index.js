@@ -30,8 +30,7 @@ async function generateImage({
       {
         model: "Tongyi-MAI/Z-Image-Turbo",
         prompt,
-        width,
-        height,
+        size: `${width}x${height}`,
         steps
       },
       {

@@ -1,6 +1,4 @@
 .DS_Store
 *.jpg
 *.png
-venv
-__pycache__/
 node_modules
