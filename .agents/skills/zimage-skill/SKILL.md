@@ -21,6 +21,7 @@ This skill generates an image from a natural-language prompt using the ModelScop
    - width
    - height
    - steps
+   - negative prompt (optional)
 3. Run the bundled Node.js script (`index.js`) with provided inputs.
 4. Return the result (image URL or base64 payload) to the user.
 
@@ -28,10 +29,17 @@ This skill generates an image from a natural-language prompt using the ModelScop
 
 - If width or height is omitted, defaults to 1024.
 - If steps is omitted, defaults to 30.
+- Negative prompt is optional and passed as `negative_prompt` in API payload.
 - Requires `MODELSCOPE_API_TOKEN` to be set in environment.
 
 ## Notes
 
 - Model: `Tongyi-MAI/Z-Image-Turbo`
-- API: `https://api-inference.modelscope.cn/v1/images/generations`
+- API: `https://api-inference.modelscope.ai/v1/images/generations`
 - Free tier and rate limits depend on ModelScope account and current policy.
+
+## CLI Example
+
+```bash
+node index.js "a cat portrait" 512 512 30 "blurry, low quality, deformed"
+```
