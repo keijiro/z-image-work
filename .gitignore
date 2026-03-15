@@ -3,3 +3,4 @@
 *.png
 *.mov
 node_modules
+tmp

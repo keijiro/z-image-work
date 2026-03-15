@@ -3,7 +3,7 @@ set -eu
 
 ffmpeg \
   -framerate 1 \
-  -i Flower_%03d.png \
+  -i flower-%03d.png \
   -c:v hap \
   -pix_fmt rgba \
-  -y Flower_hap.mov
+  -y Flower.mov

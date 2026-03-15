@@ -3,7 +3,7 @@ set -eu
 
 ffmpeg \
   -framerate 1 \
-  -i shoe-%03d.png \
+  -i bird-%03d.png \
   -c:v hap \
   -pix_fmt rgba \
-  -y Shoe.mov
+  -y Bird.mov

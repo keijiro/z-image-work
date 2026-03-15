@@ -3,8 +3,7 @@ set -eu
 
 ffmpeg \
   -framerate 1 \
-  -i glass_%02d.png \
-  -vf "crop=1024:576:0:224" \
+  -i tube-%03d.png \
   -c:v hap \
   -pix_fmt rgba \
-  -y Glass.mov
+  -y Tube.mov
