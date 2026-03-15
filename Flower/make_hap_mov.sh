@@ -6,4 +6,4 @@ ffmpeg \
   -i flower-%03d.png \
   -c:v hap \
   -pix_fmt rgba \
-  -y Flower.mov
+  -y ../../Karbon/Assets/StreamingAssets/Flower.mov
